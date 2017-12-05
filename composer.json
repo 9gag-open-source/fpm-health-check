@@ -18,6 +18,6 @@
     },
     "bin": [
         "fpm-health-check",
-        "fpm-health-check.fastcgi.php"
+        "fpm-health-check.fcgi.php"
     ]
 }
