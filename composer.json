@@ -7,11 +7,17 @@
             "email": "service@9gag.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "FpmCheck\\": "FpmCheck/"
+        }
+    },
     "require": {
         "symfony/console": ">=2.7,<3.0",
         "ebernhardson/fastcgi": "~0.2"
     },
     "bin": [
-        "fpm-health-check"
+        "fpm-health-check",
+        "fpm-health-check.fastcgi.php"
     ]
 }
