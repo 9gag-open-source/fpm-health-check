@@ -1,0 +1,17 @@
+{
+    "name": "9gag/fpm-health-check",
+    "description": "CLI command for FPM health-check",
+    "authors": [
+        {
+            "name": "Engineering",
+            "email": "service@9gag.com"
+        }
+    ],
+    "require": {
+        "symfony/console": ">=2.7,<3.0",
+        "ebernhardson/fastcgi": "~0.2"
+    },
+    "bin": [
+        "fpm-health-check"
+    ]
+}
