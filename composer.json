@@ -13,11 +13,15 @@
         }
     },
     "require": {
+        "php": ">=7.0",
         "symfony/console": ">=2.7,<3.0",
         "ebernhardson/fastcgi": "~0.2"
     },
     "bin": [
         "fpm-health-check",
         "fpm-health-check.fcgi.php"
-    ]
+    ],
+    "require-dev": {
+        "clue/phar-composer": "^1.0"
+    }
 }

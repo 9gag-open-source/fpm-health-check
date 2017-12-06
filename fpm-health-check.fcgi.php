@@ -1,9 +1,15 @@
 <?php
 /**
- * HTTP endpoint for FPM health-check.
- * This is a standalone script that run by itself.
+ * HTTP endpoint for FPM health-check, which parses and determines health from
+ * the FPM status page.
+ *
+ * This script is to be installed on the FPM server, and called via an HTTP-based
+ * health-checker. The script expects the fpm-status to be available via the HTTP
+ * server.
+ *
+ * This script is fully standalone and do not have any dependencies.
  */
-$path = $_ENV['FPM_STATUS_PATH'] ?? '_/_/status';
+$path = $_ENV['FPM_STATUS_PATH'] ?? '/status';
 $host = $_ENV['FPM_HTTP_HOST'] ?? '127.0.0.1';
 $port = $_ENV['FPM_HTTP_PORT'] ?? '80';
 
